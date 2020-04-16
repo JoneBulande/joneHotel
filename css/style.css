@@ -11,6 +11,7 @@ ul,li{
 }
 a{
 	opacity: 0.8;
+	cursor: pointer;
 	text-decoration: none;
 }
 a:hover{
@@ -20,13 +21,86 @@ a:hover{
 	/***********************************************************************************/
 /***********************************|      -     |*******************************************/
 	/************************************************************************************/
+.cabecalho{
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 2%;
+	display: flex;
+	position: absolute;
+	align-items: center;
+	background-color: #fff;
+	justify-content: space-between;
+}
+.cabecalho img{
+	width: 200px;
+}
+.cabecalho nav{
+	display: flex;
+}
+.cabecalho li a{
+	color: #191c03;
+}
+.cabecalho li{
+	margin: 0 15px;
+}
+.cabecalho li a:first-child{
+	margin-left: 0;
+}
+.cabecalho li a:last-child{
+	margin-right: 0;
+}
+@media (max-width: 700px){
 
-
-
+	.cabecalho{
+		flex-direction: column;
+	}
+	.cabecalho img{
+		margin-bottom: 5%;
+	}
+}
+	
 	/***********************************************************************************/
 /***********************************|      -     |*******************************************/
 	/************************************************************************************/
+.hero{
+	color: #fff;
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	background-size: cover;
+	justify-content: center;
+	background-image: url(../img/hero.jpg);
+}
+.hero h1{
+	color: #fff;
+	font-size: 3.2rem;
+	margin-bottom: 1%;
 
+}
+.hero h3{
+	color: #fff;
+	font-size: 2rem;
+	margin-bottom: 1%;
+}
+.hero .btn{
+	color: #191c03;
+	padding: 20px 50px;
+	border-radius: 4px;
+	background-color: #fff;
+	text-transform: uppercase;
+}
+@media (max-width: 700px){
+	.hero h1{
+		font-size: 2.5rem;
+	}
+	.hero h3{
+		font-size: 1.5rem;
+	}
+}
 
 	/***********************************************************************************/
 /***********************************|      -     |*******************************************/
