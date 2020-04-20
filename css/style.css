@@ -1,7 +1,6 @@
 *{
 	margin: 0;
 	padding: 0;	
-	border: none;
 	font-size: 100%;
 	box-sizing: border-box;
 	font-family: sans-serif;
@@ -18,82 +17,78 @@ a:hover{
 	opacity: 1;
 }
 
-	/***********************************************************************************/
-/***********************************|      -     |*******************************************/
-	/************************************************************************************/
+/*********************************************************************************************/
+	/*************************|   HEADER   -  CABECALHO   |*******************************/
+/*********************************************************************************************/
 .cabecalho{
 	top: 0;
 	left: 0;
-	width: 100%;
 	padding: 2%;
+	width: 100%;
 	display: flex;
 	position: absolute;
 	align-items: center;
 	background-color: #fff;
 	justify-content: space-between;
 }
-.cabecalho img{
+.cabecalho .logo{
 	width: 200px;
 }
-.cabecalho nav{
+.cabecalho .menu{
 	display: flex;
+	justify-content: space-between;
 }
-.cabecalho li a{
-	color: #191c03;
+.cabecalho .menu li{
+	margin: 0 12px;
 }
-.cabecalho li{
-	margin: 0 15px;
-}
-.cabecalho li a:first-child{
+.cabecalho .menu li:first-child{
 	margin-left: 0;
 }
-.cabecalho li a:last-child{
+.cabecalho .menu li:last-child{
 	margin-right: 0;
 }
-@media (max-width: 700px){
-
-	.cabecalho{
-		flex-direction: column;
-	}
-	.cabecalho img{
-		margin-bottom: 5%;
-	}
+.cabecalho .menu  a{
+	color: #191c03;
 }
-	
-	/***********************************************************************************/
-/***********************************|      -     |*******************************************/
-	/************************************************************************************/
+
+/*********************************************************************************************/
+	/*****************************|  SECTION    -  HERO   |***********************************/
+/*********************************************************************************************/
 .hero{
-	color: #fff;
-	width: 100%;
 	display: flex;
 	min-height: 100vh;
 	text-align: center;
 	align-items: center;
-	flex-direction: column;
 	background-size: cover;
+	flex-direction: column;
 	justify-content: center;
 	background-image: url(../img/hero.jpg);
 }
+
 .hero h1{
 	color: #fff;
 	font-size: 3.2rem;
-	margin-bottom: 1%;
-
+	margin-bottom: 15px;
 }
 .hero h3{
 	color: #fff;
-	font-size: 2rem;
-	margin-bottom: 1%;
+	font-size: 2.5rem;
+	margin-bottom: 15px;
 }
 .hero .btn{
-	color: #191c03;
 	padding: 20px 50px;
 	border-radius: 4px;
 	background-color: #fff;
 	text-transform: uppercase;
 }
+
 @media (max-width: 700px){
+	.cabecalho{
+		flex-direction: column;
+	}
+	.menu {
+		margin-top: 4%;
+	}
 	.hero h1{
 		font-size: 2.5rem;
 	}
@@ -102,17 +97,68 @@ a:hover{
 	}
 }
 
-	/***********************************************************************************/
+	/********************************************************************************************/
+/*******************************|  SECTION    -  CONHEÇA O HOTEL   |*****************************************/
+	/********************************************************************************************/
+.conheca-o-hotel{
+	display: flex;
+	align-items: center;
+	padding: 100px 50px;
+	flex-direction: column;
+}
+
+.conheca-o-hotel h3{
+	color: #130400; 
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.conheca-o-hotel p{
+	color: #130400; 
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.conheca-o-hotel hr{
+	height: 2px;
+	border: none;
+	width: 200px;
+	margin-bottom: 70px;
+	background-color: #130400; 
+}
+
+.conheca-o-hotel .grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conheca-o-hotel .grid li{
+	height: 350px;
+	padding: 20px;
+	border-radius: 4px;
+	background-size: cover;
+	background-position: center;
+	background-clip: content-box;
+}
+.conheca-o-hotel .grid li.small{
+	flex-basis: 40%;
+}
+.conheca-o-hotel .grid li.large{
+	flex-basis: 60%;
+}
+@media (max-width: 700px){
+	.conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large{
+		flex-basis: 100%;
+	}
+}
+
+/*********************************************************************************************/
 /***********************************|      -     |*******************************************/
-	/************************************************************************************/
+/*********************************************************************************************/
 
 
-	/***********************************************************************************/
+/*********************************************************************************************/
 /***********************************|      -     |*******************************************/
-	/************************************************************************************/
-
-
-	/***********************************************************************************/
-/***********************************|      -     |*******************************************/
-	/************************************************************************************/
+/*********************************************************************************************/
 	
