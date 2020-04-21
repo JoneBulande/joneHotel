@@ -17,18 +17,23 @@ a:hover{
 	opacity: 1;
 }
 
+
+
 /*********************************************************************************************/
 	/*************************|   HEADER   -  CABECALHO   |*******************************/
 /*********************************************************************************************/
+
+
 .cabecalho{
 	top: 0;
 	left: 0;
 	padding: 2%;
 	width: 100%;
 	display: flex;
-	position: absolute;
+	position: fixed;
 	align-items: center;
 	background-color: #fff;
+	border-bottom: 2px solid #000;
 	justify-content: space-between;
 }
 .cabecalho .logo{
@@ -51,9 +56,14 @@ a:hover{
 	color: #191c03;
 }
 
+
+
 /*********************************************************************************************/
 	/*****************************|  SECTION    -  HERO   |***********************************/
 /*********************************************************************************************/
+
+
+
 .hero{
 	display: flex;
 	min-height: 100vh;
@@ -101,42 +111,43 @@ a:hover{
 /*******************************|  SECTION    -  CONHEÇA O HOTEL   |*****************************************/
 	/********************************************************************************************/
 .conheca-o-hotel{
+	width: 100%;
 	display: flex;
+	min-height: 100vh;
+	text-align: center;
 	align-items: center;
 	padding: 100px 50px;
 	flex-direction: column;
-}
 
+}
 .conheca-o-hotel h3{
-	color: #130400; 
+	color: #191c03;
 	font-size: 2rem;
 	text-align: center;
 	margin-bottom: 35px;
 }
+
 .conheca-o-hotel p{
-	color: #130400; 
+	color: #191c03;
 	max-width: 800px;
 	text-align: center;
-	margin-bottom: 35px;
+	margin-bottom: 35px;	
 }
 .conheca-o-hotel hr{
 	height: 2px;
-	border: none;
 	width: 200px;
+	border: none;
 	margin-bottom: 70px;
-	background-color: #130400; 
+	background-color: #191c03;
 }
-
 .conheca-o-hotel .grid{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 }
-
 .conheca-o-hotel .grid li{
-	height: 350px;
 	padding: 20px;
-	border-radius: 4px;
+	height: 350px;
 	background-size: cover;
 	background-position: center;
 	background-clip: content-box;
@@ -148,17 +159,171 @@ a:hover{
 	flex-basis: 60%;
 }
 @media (max-width: 700px){
-	.conheca-o-hotel .grid li.small, .conheca-o-hotel .grid li.large{
+	.conheca-o-hotel .grid li.small,.conheca-o-hotel .grid li.large{
 		flex-basis: 100%;
+	}
+
+}
+
+
+/*********************************************************************************************/
+/*****************************|  SECTION    -  CARACTERISTICAS   |*****************************/
+/*********************************************************************************************/
+
+
+.caracteristicas{
+	width: 100%;
+	display: flex;
+	min-height: 100vh;
+	text-align: center;
+	align-items: center;
+	padding: 100px 50px;
+	flex-direction: column;
+	background-color: #191c03;
+
+}
+.caracteristicas h3{
+	color: #fff;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.caracteristicas p{
+	color: #fff;
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;	
+}
+.caracteristicas hr{
+	height: 2px;	
+	width: 200px;
+	border: none;
+	margin-bottom: 70px;
+	background-color: #fff;
+}
+.caracteristicas .grid{
+	width: 100%;
+	display: flex;
+
+}
+.caracteristicas .grid li{
+	padding: 0 30px;
+	text-align: center;
+}
+.caracteristicas .grid li i{
+	color: #c3c63b;
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.caracteristicas .grid li h4{
+	color: #c3c63b;
+	font-size: 1.5rem;
+	margin-bottom: 30px;
+}
+.caracteristicas .grid li p{
+	color: #fff;
+}
+
+@media (max-width: 850px){
+	.caracteristicas .grid{
+		flex-direction: column;
 	}
 }
 
+
 /*********************************************************************************************/
-/***********************************|      -     |*******************************************/
+/***********************************|   SECTION   -  NEWSLETTER   |*******************************************/
 /*********************************************************************************************/
 
 
+.newsletter{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	padding: 100px 50px;
+	flex-direction: column;
+}
+.newsletter h3{
+	color: #c3c63b;
+	font-size: 2rem;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.newsletter p{
+	color: #c3c63b;
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;	
+}
+.newsletter hr{
+	height: 2px;	
+	width: 200px;
+	border: none;
+	margin-bottom: 70px;
+	background-color: #c3c63b;
+}
+
+.newsletter form{
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 800px;
+	align-items: center;
+	justify-content: center;
+}
+.newsletter form input{
+	flex: 1;
+	padding: 15px;
+	border-radius: 4px;
+	margin-right: 15px;
+	border: 1px solid #c3c63b;
+}
+.newsletter button{
+	padding: 15px;
+	color: #191c03;
+	cursor: pointer;
+	border-radius: 4px;
+	text-transform: uppercase;
+	border: 1px solid #c3c63b;
+	background-color: #c3c63b;
+}
+
+@media (max-width: 700px){
+	.newsletter input{
+		flex-basis: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+
 /*********************************************************************************************/
-/***********************************|      -     |*******************************************/
+/***********************************|   FOOTER   -  RODAPÉ   |*******************************************/
 /*********************************************************************************************/
-	
+.rodape{
+	display: flex;
+	padding: 50px;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #191c03;
+}
+.rodape ul{
+	display: flex;
+	margin-bottom: 25px;
+}
+.rodape ul li{
+	margin-right: 10px;
+}
+.rodape ul li:last-child{
+	margin-right: 0;	
+}
+.rodape ul li a{
+	color: #c3c63b;
+	font-size: 2rem;
+}
+.rodape p{
+	color: #c3c63b;
+	text-align: center;
+}
