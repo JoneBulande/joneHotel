@@ -9,12 +9,12 @@ ul,li{
 	list-style: none;
 }
 a{
-	opacity: 0.8;
+	opacity: 1;
 	cursor: pointer;
 	text-decoration: none;
 }
 a:hover{
-	opacity: 1;
+	opacity: 0.6;
 }
 
 
