@@ -27,6 +27,7 @@ a:hover{
 .cabecalho{
 	top: 0;
 	left: 0;
+	z-index: 1;
 	padding: 2%;
 	width: 100%;
 	display: flex;
@@ -99,6 +100,10 @@ a:hover{
 	.menu {
 		margin-top: 4%;
 	}
+	.hero{
+		animation-name: none;
+		animation: none !important;
+	}
 	.hero h1{
 		font-size: 2.5rem;
 	}
@@ -121,10 +126,10 @@ a:hover{
 
 }
 .conheca-o-hotel h3{
+	margin: 30px 0;
 	color: #191c03;
 	font-size: 2rem;
 	text-align: center;
-	margin-bottom: 35px;
 }
 
 .conheca-o-hotel p{
@@ -184,9 +189,9 @@ a:hover{
 }
 .caracteristicas h3{
 	color: #fff;
+	margin: 30px 0;
 	font-size: 2rem;
 	text-align: center;
-	margin-bottom: 35px;
 }
 
 .caracteristicas p{
@@ -245,10 +250,10 @@ a:hover{
 	flex-direction: column;
 }
 .newsletter h3{
+	margin: 30px 0;
 	color: #c3c63b;
 	font-size: 2rem;
 	text-align: center;
-	margin-bottom: 35px;
 }
 .newsletter p{
 	color: #c3c63b;
