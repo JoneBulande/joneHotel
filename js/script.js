@@ -18,29 +18,11 @@ function initScrollSuave() {
 initScrollSuave();
 
 
-const downs = document.querySelectorAll(".animationDown");
-const ups = document.querySelectorAll(".animationUp");
-
-const windowMetade = window.innerHeight * 0.8;
-
-function animationScroll(){
-	downs.forEach((down)=>{
-		const top = down.getBoundingClientRect().top;
-		const isVisible = (top - windowMetade) < 0;
-		if (isVisible) {
-			down.classList.add("ativo");
-		}else{
-			down.classList.remove("ativo");
-		}
-	});
-	ups.forEach((up)=>{
-		const top = up.getBoundingClientRect().top;
-		const isVisible = (top - windowMetade) < 0;
-		if (isVisible) {
-			up.classList.add("ativo");
-		}else{
-			up.classList.remove("ativo");
-		}
-	});
+const sections = document.querySelectorAll(".js");
+function scrollAnimation() {
+/*	sections.forEach((section)=>{
+		console.log(section);
+	});*/
 }
-window.addEventListener("scroll", animationScroll)
+
+window.addEventListener("scroll", scrollAnimation)
