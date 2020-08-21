@@ -1,5 +1,5 @@
 function initScrollSuave() {
-	const links = document.querySelectorAll(".menu a");
+	const links = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
 
 	function scrollSuave(event) {
 		event.preventDefault();
@@ -18,8 +18,8 @@ function initScrollSuave() {
 initScrollSuave();
 
 
-const downs = document.querySelectorAll(".animationDown");
-const ups = document.querySelectorAll(".animationUp");
+const downs = document.querySelectorAll('[data-anime="down"]');
+const ups = document.querySelectorAll('[data-anime="up"]');
 
 const windowMetade = window.innerHeight * 0.8;
 

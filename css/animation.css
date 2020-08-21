@@ -14,13 +14,13 @@ body{
 		transform: translateY(0);
 	}
 }
-.hero h1{
+[data-anime="hero"] h1{
 	animation: slideDown 1s forwards;
 }
-.hero h3{
+[data-anime="hero"] h3{
 	animation: slideDown 1s forwards;
 }
-.hero .btn{
+[data-anime="hero"] .btn{
 	animation: slideDown 1s forwards;
 }
 
@@ -35,11 +35,11 @@ body{
 	}
 }
 
-.hero{
+[data-anime="hero"]{
 	animation: imgZoom 1.5s forwards;
 }
 @media (max-width: 700px){
-	.hero{
+	[data-anime="hero"]{
 		animation: none;
 	}
 }
@@ -47,21 +47,21 @@ body{
 /*****************************************************************************************/
 /*****************************************************************************************/
 /*****************************************************************************************/
-.animationDown{
+[data-anime="down"]{
 	opacity: 0;
 	transition: .5s;
 	transform: translateY(-30px);
 }
-.animationDown.ativo{
+[data-anime="down"].ativo{
 	opacity: 1;
 	transform: translateY(0);
 }
-.animationUp{
+[data-anime="up"]{
 	opacity: 0;
 	transition: .5s;
 	transform: translateY(30px);
 }
-.animationUp.ativo{
+[data-anime="up"].ativo{
 	opacity: 1;
 	transform: translateY(0);
 }
