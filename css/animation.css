@@ -65,3 +65,35 @@ body{
 	opacity: 1;
 	transform: translateY(0);
 }
+
+/*btn*/
+.btn{
+	color: #000;
+}
+
+/*ceta*/
+.ceta{
+	opacity: 0;
+	right: 15px;
+	bottom: 20px;
+	color: #191c03;
+	transition: 1s;
+	position: fixed;
+	padding: 5px 13px;
+	font-size: 1.5rem;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: #c3c63b;
+	border: 1px solid #000;
+	transform: translateY(100px);
+}
+.ceta:hover{
+	opacity: 1;
+	color: #c3c63b;
+	background-color: #191c03;
+	border: 1px solid #c3c63b;
+}
+.ceta.ativo{
+	opacity: 0.8;
+	transform: translateY(0);
+}
