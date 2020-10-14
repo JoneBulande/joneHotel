@@ -77,14 +77,14 @@ body{
 	right: 15px;
 	bottom: 20px;
 	color: #191c03;
-	transition: 1s;
+	transition: 2s;
 	position: fixed;
 	padding: 5px 13px;
 	font-size: 1.5rem;
 	font-weight: bold;
 	border-radius: 50%;
-	background-color: #c3c63b;
 	border: 1px solid #000;
+	background-color: #c3c63b;
 	transform: translateY(100px);
 }
 .ceta:hover{
