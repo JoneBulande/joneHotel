@@ -1,13 +1,16 @@
 ///////////////////////////////////////////////
 /////| SCROLL SUAVE
 ///////////////////////////////////////////////
-export default function initScrollSuave() {
-	const ceta = document.querySelector('.ceta'),
-				btn = document.querySelector('.btn'),
-				grid = document.querySelector('.grid'),
-				links = document.querySelectorAll('[data-menu="suave"] a[href^="#"]');
+export default class ScrollSuave {
 
-	function scrollSuave(event) {
+	constructor(links, btn) {
+		this.btn = document.querySelector(btn);
+		this.links = document.querySelectorAll(links);
+		
+		this.scrollSuave = this.scrollSuave.bind(this);
+	};
+	
+	scrollSuave(event) {
 		event.preventDefault();
 		const href = event.currentTarget.getAttribute("href");
 		const section = document.querySelector(href);
@@ -16,11 +19,18 @@ export default function initScrollSuave() {
 			behavior: 'smooth'
 		})
 	}
-
-	links.forEach((link)=>{
-		link.addEventListener("click", scrollSuave);
-	});
 	
-	ceta.addEventListener("click", scrollSuave);
-	btn.addEventListener("click", scrollSuave);
+	addEvent() {
+		this.links.forEach(link => {
+			link.addEventListener('click', this.scrollSuave)	
+		});
+	}
+
+	init() {
+		if(this.links.length) {
+			this.addEvent();
+		}
+		
+	}
+	
 }
