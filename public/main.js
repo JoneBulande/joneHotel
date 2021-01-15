@@ -5,8 +5,8 @@
 
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
-      var o = t[n];
-      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
+      var i = t[n];
+      i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i);
     }
   }
 
@@ -17,8 +17,8 @@
       }(this, t), this.btn = document.querySelector(e);
     }
 
-    var n, o;
-    return n = t, (o = [{
+    var n, i;
+    return n = t, (i = [{
       key: "scrollSuaveTop",
       value: function value(e) {
         e.preventDefault();
@@ -38,20 +38,20 @@
       value: function value() {
         this.addEvent();
       }
-    }]) && e(n.prototype, o), t;
+    }]) && e(n.prototype, i), t;
   }();
 
   function n(e, t) {
     for (var n = 0; n < t.length; n++) {
-      var o = t[n];
-      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
+      var i = t[n];
+      i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i);
     }
   }
 
-  var o,
-      i,
-      r,
+  var i,
+      o,
       a,
+      r,
       c,
       l = function () {
     function e(t, n) {
@@ -60,8 +60,8 @@
       }(this, e), this.btn = document.querySelector(n), this.links = document.querySelectorAll(t), this.scrollSuave = this.scrollSuave.bind(this);
     }
 
-    var t, o;
-    return t = e, (o = [{
+    var t, i;
+    return t = e, (i = [{
       key: "scrollSuave",
       value: function value(e) {
         e.preventDefault();
@@ -84,42 +84,13 @@
       value: function value() {
         this.links.length && this.addEvent();
       }
-    }]) && n(t.prototype, o), e;
+    }]) && n(t.prototype, i), e;
   }();
 
-  function s(e, t) {
-    for (var n = 0; n < t.length; n++) {
-      var o = t[n];
-      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
-    }
-  }
-
-  new (function () {
-    function e(t, n, o) {
-      !function (e, t) {
-        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
-      }(this, e), this.logo = document.querySelector(t), this.hero = document.querySelector(n), this.cabecalho = document.querySelector(o);
-    }
-
-    var t, n;
-    return t = e, (n = [{
-      key: "mostrar",
-      value: function value() {
-        this.hero.getBoundingClientRect().top < 0 ? (this.cabecalho.classList.add("ativo"), this.logo.src = "http://127.0.0.1:5500/img/logo.png") : (this.cabecalho.classList.remove("ativo"), this.logo.src = "http://127.0.0.1:5500/img/logo2.png");
-      }
-    }, {
-      key: "init",
-      value: function value() {
-        var e = this;
-        window.addEventListener("scroll", function () {
-          e.mostrar();
-        });
-      }
-    }]) && s(t.prototype, n), e;
-  }())(".logo", ".hero", ".cabecalho").init(), new t(".ceta").init(), new l('[data-menu="suave"] a[href^="#"]', ".btn").init(), o = document.querySelector(".ceta"), i = document.querySelector(".grid"), r = document.querySelectorAll('[data-anime="down"]'), a = document.querySelectorAll('[data-anime="up"]'), c = .8 * window.innerHeight, window.addEventListener("scroll", function () {
-    i.classList.contains("ativo") ? o.classList.add("ativo") : o.classList.remove("ativo"), r.forEach(function (e) {
+  new t(".ceta").init(), new l('[data-menu="suave"] a[href^="#"]', ".btn").init(), i = document.querySelector(".ceta"), o = document.querySelector(".grid"), a = document.querySelectorAll('[data-anime="down"]'), r = document.querySelectorAll('[data-anime="up"]'), c = .8 * window.innerHeight, window.addEventListener("scroll", function () {
+    o.classList.contains("ativo") ? i.classList.add("ativo") : i.classList.remove("ativo"), a.forEach(function (e) {
       e.getBoundingClientRect().top - c < 0 ? e.classList.add("ativo") : e.classList.remove("ativo");
-    }), a.forEach(function (e) {
+    }), r.forEach(function (e) {
       e.getBoundingClientRect().top - c < 0 ? e.classList.add("ativo") : e.classList.remove("ativo");
     });
   });
