@@ -22,8 +22,9 @@ export default class ScrollSuave {
 	
 	addEvent() {
 		this.links.forEach(link => {
-			link.addEventListener('click', this.scrollSuave)	
+			link.addEventListener('click', this.scrollSuave);
 		});
+		this.btn.addEventListener('click', this.scrollSuave);
 	}
 
 	init() {

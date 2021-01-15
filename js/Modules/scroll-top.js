@@ -8,7 +8,7 @@ export default class ScrollTop {
         event.preventDefault();
 
 		const href = event.currentTarget.getAttribute("href");
-		const section = document.querySelector(href);
+	 	const section = document.querySelector(href);
         
         section.scrollIntoView({
 			block:'start',

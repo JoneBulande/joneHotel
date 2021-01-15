@@ -28,14 +28,16 @@ a:hover{
 	top: 0;
 	left: 0;
 	z-index: 1;
-	padding: 2%;
 	width: 100%;
+	padding: 20px;
 	display: flex;
 	position: fixed;
 	align-items: center;
-	background-color: #fff;
+	background-color: #a1c5478c;
 	justify-content: space-between;
-	border-bottom: 1px solid #191c03;
+	transition: background, padding .5s;
+	border-bottom: 1px solid #c3c73580;
+
 }
 .cabecalho .logo{
 	width: 200px;
@@ -45,7 +47,7 @@ a:hover{
 	justify-content: space-between;
 }
 .cabecalho .menu li{
-	margin: 0 12px;
+	margin: 0 10px;
 }
 .cabecalho .menu li:first-child{
 	margin-left: 0;
@@ -54,6 +56,26 @@ a:hover{
 	margin-right: 0;
 }
 .cabecalho .menu  a{
+	color: #fff;
+	padding: 5px 10px;
+	transition: color .5s;
+	border: 1px solid transparent;
+}
+
+.cabecalho .menu  a:hover {
+	color: #202306;
+	border: 1px solid #202306;
+}
+
+
+
+.cabecalho.ativo {
+	padding: 10px;
+	background-color: #fff;
+	border-bottom: 1px solid #191c03;
+	transition: background, padding .5s;
+}
+.cabecalho.ativo a{
 	color: #191c03;
 }
 
@@ -86,11 +108,18 @@ a:hover{
 	font-size: 2.5rem;
 	margin-bottom: 15px;
 }
-.hero .btn{
+.hero .btn {
 	padding: 20px 50px;
-	border-radius: 4px;
+	border-radius: 4px;	
 	background-color: #fff;
 	text-transform: uppercase;
+	border: 1px solid transparent;
+	transition: background .5s;
+}
+.hero .btn:hover {
+	color: #c3c63b;
+	border: 1px solid #c3c63b;
+	background-color: #191c03;
 }
 
 @media (max-width: 700px){
@@ -292,6 +321,13 @@ a:hover{
 	text-transform: uppercase;
 	border: 1px solid #c3c63b;
 	background-color: #c3c63b;
+	transition: color, background 1s;
+}
+
+.newsletter button:hover {
+	color: #c3c63b;
+	border: 1px solid #c3c63b;
+	background-color: #000000;
 }
 
 @media (max-width: 700px){
