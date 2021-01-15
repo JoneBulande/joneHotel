@@ -1,0 +1,22 @@
+{
+  "name": "documentacao",
+  "version": "1.0.0",
+  "description": "![joneHotel](https://github.com/JoneBulande/joneHotel/blob/master/img/jh.jpg)",
+  "private": true,
+  "scripts": {
+    "webpack": "webpack",
+    "babel": "npx babel dist/main.js --out-dir public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-loader": "^8.2.2",
+    "webpack": "^5.14.0",
+    "webpack-cli": "^4.3.1"
+  },
+  "main": "index.js"
+}
