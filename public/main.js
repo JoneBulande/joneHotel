@@ -5,8 +5,8 @@
 
   function e(e, t) {
     for (var n = 0; n < t.length; n++) {
-      var i = t[n];
-      i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i);
+      var o = t[n];
+      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
     }
   }
 
@@ -17,8 +17,8 @@
       }(this, t), this.btn = document.querySelector(e);
     }
 
-    var n, i;
-    return n = t, (i = [{
+    var n, o;
+    return n = t, (o = [{
       key: "scrollSuaveTop",
       value: function value(e) {
         e.preventDefault();
@@ -38,18 +38,18 @@
       value: function value() {
         this.addEvent();
       }
-    }]) && e(n.prototype, i), t;
+    }]) && e(n.prototype, o), t;
   }();
 
   function n(e, t) {
     for (var n = 0; n < t.length; n++) {
-      var i = t[n];
-      i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(e, i.key, i);
+      var o = t[n];
+      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
     }
   }
 
-  var i,
-      o,
+  var o,
+      i,
       a,
       r,
       c,
@@ -60,8 +60,8 @@
       }(this, e), this.btn = document.querySelector(n), this.links = document.querySelectorAll(t), this.scrollSuave = this.scrollSuave.bind(this);
     }
 
-    var t, i;
-    return t = e, (i = [{
+    var t, o;
+    return t = e, (o = [{
       key: "scrollSuave",
       value: function value(e) {
         e.preventDefault();
@@ -84,11 +84,40 @@
       value: function value() {
         this.links.length && this.addEvent();
       }
-    }]) && n(t.prototype, i), e;
+    }]) && n(t.prototype, o), e;
   }();
 
-  new t(".ceta").init(), new l('[data-menu="suave"] a[href^="#"]', ".btn").init(), i = document.querySelector(".ceta"), o = document.querySelector(".grid"), a = document.querySelectorAll('[data-anime="down"]'), r = document.querySelectorAll('[data-anime="up"]'), c = .8 * window.innerHeight, window.addEventListener("scroll", function () {
-    o.classList.contains("ativo") ? i.classList.add("ativo") : i.classList.remove("ativo"), a.forEach(function (e) {
+  function u(e, t) {
+    for (var n = 0; n < t.length; n++) {
+      var o = t[n];
+      o.enumerable = o.enumerable || !1, o.configurable = !0, "value" in o && (o.writable = !0), Object.defineProperty(e, o.key, o);
+    }
+  }
+
+  new (function () {
+    function e(t, n, o) {
+      !function (e, t) {
+        if (!(e instanceof t)) throw new TypeError("Cannot call a class as a function");
+      }(this, e), this.logo = document.querySelector(t), this.hero = document.querySelector(n), this.cabecalho = document.querySelector(o);
+    }
+
+    var t, n;
+    return t = e, (n = [{
+      key: "mostrar",
+      value: function value() {
+        this.hero.getBoundingClientRect().top < 0 ? this.cabecalho.classList.add("ativo") : this.cabecalho.classList.remove("ativo");
+      }
+    }, {
+      key: "init",
+      value: function value() {
+        var e = this;
+        window.addEventListener("scroll", function () {
+          e.mostrar();
+        });
+      }
+    }]) && u(t.prototype, n), e;
+  }())(".logo", ".hero", ".cabecalho").init(), new t(".ceta").init(), new l('[data-menu="suave"] a[href^="#"]', ".btn").init(), o = document.querySelector(".ceta"), i = document.querySelector(".grid"), a = document.querySelectorAll('[data-anime="down"]'), r = document.querySelectorAll('[data-anime="up"]'), c = .8 * window.innerHeight, window.addEventListener("scroll", function () {
+    i.classList.contains("ativo") ? o.classList.add("ativo") : o.classList.remove("ativo"), a.forEach(function (e) {
       e.getBoundingClientRect().top - c < 0 ? e.classList.add("ativo") : e.classList.remove("ativo");
     }), r.forEach(function (e) {
       e.getBoundingClientRect().top - c < 0 ? e.classList.add("ativo") : e.classList.remove("ativo");

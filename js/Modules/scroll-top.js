@@ -1,19 +1,17 @@
 export default class ScrollTop {
 
-	constructor(btnUp, top) {
+	constructor(btnUp) {
 		this.btn = document.querySelector(btnUp);
 	};	
     
-    scrollSuaveTop(event) {
-        event.preventDefault();
-
+	scrollSuaveTop(event) {
+	  event.preventDefault();
 		const href = event.currentTarget.getAttribute("href");
-	 	const section = document.querySelector(href);
-        
-        section.scrollIntoView({
+	 	const section = document.querySelector(href);	      
+	  section.scrollIntoView({
 			block:'start',
 			behavior: 'smooth'
-		})
+		});
 	}
 	
 	addEvent() {		
