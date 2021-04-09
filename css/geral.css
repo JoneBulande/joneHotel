@@ -95,6 +95,7 @@ a:hover{
 	background-size: cover;
 	flex-direction: column;
 	justify-content: center;
+	background-color: #191c03;
 	background-image: url(../img/hero.jpg);
 }
 
